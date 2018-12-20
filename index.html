@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>绿蜻蜓生物科技宣传册</title>
+    <link rel="stylesheet" href="swiper/dist/css/swiper.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            background: url("./images/backGroundImg.jpg") no-repeat center;
+            background-size: cover;
+        }
+        #content{
+            height: 100%;
+            display: flex;
+            justify-content:center;
+            align-items:Center;
+            padding: 40px 0;
+            box-sizing: border-box;
+        }
+        .swiper-container {
+            height: 100%;
+
+        }
+        .swiper-container .swiper-wrapper{
+            height: 100%;
+            width: 400px;
+        }
+        .swiper-container .swiper-wrapper .swiper-slide{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .swiper-container .swiper-wrapper .swiper-slide img{
+            width: 100%;
+            display: block;
+        
+        }
+    </style>
+</head>
+<body>
+<audio src="./audio/BackgroundSound.mp3" autoplay="autoplay" loop="loop"></audio>
+<div id="content">
+<div class="swiper-container">
+
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/4.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/5.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/6.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/7.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/8.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/9.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/10.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/11.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/12.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/13.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/14.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/15.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/16.jpg" alt=""></div>
+    </div>
+</div>
+</div>
+</body>
+<script src="swiper/dist/js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal', // 垂直切换选项
+        loop: true, // 循环模式选项
+        disableOnInteraction:false,
+        autoplay: {
+            disableOnInteraction: false,
+            delay: 5000,
+        },
+    })
+</script>
+</html>
